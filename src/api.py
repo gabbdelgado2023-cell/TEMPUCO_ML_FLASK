@@ -46,12 +46,10 @@ SCHOLARSHIP_NUMERIC_FIELDS = {
 
 SCHOLARSHIP_CATEGORY_FIELDS = {
     "current_year_level": {
-        "grade_7",
-        "grade_8",
-        "grade_9",
-        "grade_10",
-        "grade_11",
-        "grade_12",
+        "1st_year",
+        "2nd_year",
+        "3rd_year",
+        "4th_year",
     },
     "complete_documents": {"yes", "no"},
     "previous_scholarship": {"yes", "no"},
