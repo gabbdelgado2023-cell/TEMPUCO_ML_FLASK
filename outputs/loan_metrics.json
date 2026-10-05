@@ -1,0 +1,76 @@
+{
+    "model_name": "loan",
+    "sample_data_only": true,
+    "total_records": 5000,
+    "training_records": 4000,
+    "testing_records": 1000,
+    "accuracy": 0.585,
+    "classes": [
+        "HIGH_RISK",
+        "LOW_RISK",
+        "MEDIUM_RISK"
+    ],
+    "confusion_matrix": [
+        [
+            67,
+            19,
+            31
+        ],
+        [
+            51,
+            268,
+            134
+        ],
+        [
+            98,
+            82,
+            250
+        ]
+    ],
+    "classification_report": {
+        "HIGH_RISK": {
+            "precision": 0.3101851851851852,
+            "recall": 0.5726495726495726,
+            "f1-score": 0.4024024024024024,
+            "support": 117.0
+        },
+        "LOW_RISK": {
+            "precision": 0.7262872628726287,
+            "recall": 0.5916114790286976,
+            "f1-score": 0.6520681265206812,
+            "support": 453.0
+        },
+        "MEDIUM_RISK": {
+            "precision": 0.6024096385542169,
+            "recall": 0.5813953488372093,
+            "f1-score": 0.591715976331361,
+            "support": 430.0
+        },
+        "accuracy": 0.585,
+        "macro avg": {
+            "precision": 0.5462940288706769,
+            "recall": 0.5818854668384933,
+            "f1-score": 0.5487288350848148,
+            "support": 1000.0
+        },
+        "weighted avg": {
+            "precision": 0.6243359413262808,
+            "recall": 0.585,
+            "f1-score": 0.5969058122174349,
+            "support": 1000.0
+        }
+    },
+    "input_features": [
+        "employment_status",
+        "has_co_maker",
+        "age",
+        "monthly_income",
+        "years_employed",
+        "existing_loan_balance",
+        "monthly_debt_payment",
+        "requested_amount",
+        "term_months",
+        "late_payments_12m",
+        "savings_balance"
+    ]
+}

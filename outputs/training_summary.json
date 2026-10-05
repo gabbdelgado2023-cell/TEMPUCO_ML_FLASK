@@ -1,0 +1,23 @@
+{
+    "warning": "These models use synthetic demonstration data. They must not be used for actual approval decisions until they are retrained and validated using authorized historical TEMPUCO records.",
+    "models": {
+        "loan": {
+            "accuracy": 0.6375,
+            "classes": [
+                "HIGH_RISK",
+                "LOW_RISK",
+                "MEDIUM_RISK"
+            ],
+            "total_records": 1200
+        },
+        "scholarship": {
+            "accuracy": 0.8125,
+            "classes": [
+                "ELIGIBLE",
+                "FOR_REVIEW",
+                "NOT_ELIGIBLE"
+            ],
+            "total_records": 1200
+        }
+    }
+}
