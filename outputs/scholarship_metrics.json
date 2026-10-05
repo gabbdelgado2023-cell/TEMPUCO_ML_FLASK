@@ -1,63 +1,63 @@
 {
     "model_name": "scholarship",
     "sample_data_only": true,
-    "total_records": 1200,
-    "training_records": 960,
-    "testing_records": 240,
-    "accuracy": 0.8125,
+    "total_records": 1000,
+    "training_records": 800,
+    "testing_records": 200,
+    "accuracy": 0.95,
     "classes": [
         "ELIGIBLE",
-        "FOR_REVIEW",
+        "NEEDS_REVIEW",
         "NOT_ELIGIBLE"
     ],
     "confusion_matrix": [
         [
-            132,
-            16,
-            1
+            34,
+            0,
+            0
         ],
         [
-            13,
-            45,
-            4
+            1,
+            85,
+            0
         ],
         [
-            2,
+            0,
             9,
-            18
+            71
         ]
     ],
     "classification_report": {
         "ELIGIBLE": {
-            "precision": 0.8979591836734694,
-            "recall": 0.8859060402684564,
-            "f1-score": 0.8918918918918919,
-            "support": 149.0
+            "precision": 0.9714285714285714,
+            "recall": 1.0,
+            "f1-score": 0.9855072463768116,
+            "support": 34.0
         },
-        "FOR_REVIEW": {
-            "precision": 0.6428571428571429,
-            "recall": 0.7258064516129032,
-            "f1-score": 0.6818181818181818,
-            "support": 62.0
+        "NEEDS_REVIEW": {
+            "precision": 0.9042553191489362,
+            "recall": 0.9883720930232558,
+            "f1-score": 0.9444444444444444,
+            "support": 86.0
         },
         "NOT_ELIGIBLE": {
-            "precision": 0.782608695652174,
-            "recall": 0.6206896551724138,
-            "f1-score": 0.6923076923076923,
-            "support": 29.0
+            "precision": 1.0,
+            "recall": 0.8875,
+            "f1-score": 0.9403973509933775,
+            "support": 80.0
         },
-        "accuracy": 0.8125,
+        "accuracy": 0.95,
         "macro avg": {
-            "precision": 0.774475007394262,
-            "recall": 0.7441340490179246,
-            "f1-score": 0.7553392553392554,
-            "support": 240.0
+            "precision": 0.9585612968591692,
+            "recall": 0.958624031007752,
+            "f1-score": 0.9567830139382112,
+            "support": 200.0
         },
         "weighted avg": {
-            "precision": 0.8181196391600117,
-            "recall": 0.8125,
-            "f1-score": 0.8135064260064261,
-            "support": 240.0
+            "precision": 0.9539726443768997,
+            "recall": 0.95,
+            "f1-score": 0.94980628339252,
+            "support": 200.0
         }
     },
     "input_features": [
